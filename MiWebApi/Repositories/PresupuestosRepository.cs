@@ -10,7 +10,7 @@ public class PresupuestosRepository {
 
         using (SqliteConnection connection = new SqliteConnection(ConnectionString))
         {
-            
+            //asda
             string queryString = @"SELECT * FROM Presupuestos;";
 
             SqliteCommand command = new SqliteCommand(queryString, connection);
