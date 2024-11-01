@@ -5,8 +5,8 @@ public class PresupuestosRepository {
     private string ConnectionString = @"Data Source=db/Tienda.db;Cache=Shared";
 
     public PresupuestosRepository() {}
-
     public List<Presupuestos> GetPresupuestos() {
+        //asdasdasda 
         List<Presupuestos> presupuestos = new List<Presupuestos>();
 
         using (SqliteConnection connection = new SqliteConnection(ConnectionString))
@@ -79,5 +79,5 @@ public class PresupuestosRepository {
         }
         return pdList;
     }
-    
+
 }
