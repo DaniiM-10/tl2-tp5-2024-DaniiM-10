@@ -30,4 +30,5 @@ public class ProductosController : ControllerBase
 
     [HttpDelete("api/Producto/{IdP:int}")]
     public ActionResult DeleteProduct(int IdP) => (productosRepository.DeleteProduct(IdP)) ? Ok() : StatusCode(500);
+    
 }
