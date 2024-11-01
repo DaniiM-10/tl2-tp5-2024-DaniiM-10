@@ -6,11 +6,11 @@ public class PresupuestosRepository {
 
     public PresupuestosRepository() {}
     public List<Presupuestos> GetPresupuestos() {
-        //asdasdasda 
         List<Presupuestos> presupuestos = new List<Presupuestos>();
 
         using (SqliteConnection connection = new SqliteConnection(ConnectionString))
         {
+            
             string queryString = @"SELECT * FROM Presupuestos;";
 
             SqliteCommand command = new SqliteCommand(queryString, connection);
